@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OnA Booking">
+	<meta name="author" content="Swift Tech Co.">
+	<title>OnA Booking</title>
+
+    <!-- Favicons-->
+	<link rel="shortcut icon" href="img/OnA Favicon.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- COMMON CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	
+	<!-- CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+        
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+     <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"><i class="icon-phone"></i><strong>0901 441 1111</strong></div>
+                    <div class="col-6">
+                        <ul id="top_links">
+                            <li><a href="#sign-in-dialog" id="access_link">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                    	<h1><a href="index_7.html" title="OnA Booking">OnA Booking</a></h1>
+
+                    </div>
+                </div>
+
+                <nav class="col-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/OnA logo.png" width="160" height="34" alt="City tours">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                <a href="index_7.html" class="show-submenu">Home</a>
+
+                                
+                            </li>
+                            <li class="submenu">
+                                <a href="about.html" class="show-submenu">About</a>
+                            </li>
+                             <li class="submenu">
+                                <a href="grid_gallery_2.html" class="show-submenu">Gallery</a>
+                                
+                            </li>
+                            <li class="submenu">
+                                <a href="single_hotel.html" class="show-submenu">Reseervation</a>
+                                <!-- <ul>
+                                    <li><a href="all_transfer_list.html">Reservation System</a></li>
+                                    <li><a href="all_transfer_grid.html">Calendar Availability</a></li>
+
+                                </ul> -->
+                            </li>
+                              <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Dashboard<i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="admin.html">Guest</a></li>
+                                    <li><a href="admin.html">Admin</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="faq.html" class="show-submenu-mega">FAQ</a>
+                            </li>
+
+                            <li class="submenu">
+                                <a href="contact_us_2.html" class="show-submenu-mega">Contact Us</a>
+                              
+                            </li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                       
+                    <ul id="top_tools">
+                        <li>
+                            <a href="javascript:void(0);" class="search-overlay-menu-btn"><i class="icon_search"></i></a>
+                        </li>
+                        <li>
+                            <div class="dropdown dropdown-cart">
+                                <a href="#" data-bs-toggle="dropdown" class="cart_bt"><i class="icon_bag_alt"></i><strong>3</strong></a>
+                                <ul class="dropdown-menu" id="cart_items">
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                        <strong><a href="#">Louvre museum</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_2.jpg" alt="image"></div>
+                                        <strong><a href="#">Versailles tour</a>2x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_3.jpg" alt="image"></div>
+                                        <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div>Total: <span>$120.00</span></div>
+                                        <a href="cart.html" class="button_drop">Go to cart</a>
+                                        <a href="payment.html" class="button_drop outline">Check out</a>
+                                    </li>
+                                </ul>
+                            </div><!-- End dropdown-cart-->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+	
+						
+    <!-- <section class="header-video">
+		<div id="hero_video">
+            <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+    			<div class="intro_title">
+    				<h3 class="animated fadeInDown">Affordable Paris tours</h3>
+    				<p class="animated fadeInDown">City Tours / Tour Tickets / Tour Guides</p>
+    				<a href="#" class="animated fadeInUp button_intro">View Tours</a>
+    				<a href="#" class="animated fadeInUp button_intro outline hidden-sm hidden-xs">View Tickets</a>
+    			</div>
+            </div>
+		</div>
+		<img src="img/onaimages/XMOF6979.MOV" alt="Image" class="header-video--media" data-video-src="" data-teaser-source="video/paris" data-provider="" data-video-width="854" data-video-height="480">
+	</section> -->
+	
+	<section id="search_container">
+		<div id="search">
+			<ul class="nav nav-tabs">
+				<!-- <li><a href="#tours" data-bs-toggle="tab" class="active show">Tours</a></li> -->
+				<li><a href="#hotels" data-bs-toggle="tab">Book Now</a></li>
+				<!-- <li><a href="#transfers" data-bs-toggle="tab">Transfers</a></li> -->
+				<!-- <li><a href="#restaurants" data-bs-toggle="tab">Restaurants</a></li> -->
+			</ul>
+
+			<div class="tab-content">
+				
+				<div class="tab-pane active show" id="hotels">
+					<h3>OnA Apartments</h3>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label><i class="icon-calendar-7"></i> Check in</label>
+								<input class="date-pick form-control" type="text">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label><i class="icon-calendar-7"></i> Check out</label>
+								<input class="date-pick form-control" type="text">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label><i class=" icon-clock"></i> Time</label>
+								<input class="time-pick form-control" value="12:00 AM" type="text">
+							</div>
+						</div>
+							<!-- End row -->
+						
+						<div class="col-md-2 col-sm-3 col-6">
+							<div class="form-group">
+								<label>Adults</label>
+								<div class="numbers-row">
+									<input type="text" value="1" id="adults" class="qty2 form-control" name="adults_2">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 col-6">
+							<div class="form-group">
+								<label>Children</label>
+								<div class="numbers-row">
+									<input type="text" value="0" id="children" class="qty2 form-control" name="children_2">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 col-12">
+							<div class="form-group">
+								<label>Rooms</label>
+								<div class="numbers-row">
+									<input type="text" value="1" id="children" class="qty2 form-control" name="rooms">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<!-- <div class="col-md-6">
+							<div class="form-group">
+								<label>Hotel name</label>
+								<input type="text" class="form-control" id="hotel_name" name="hotel_name" placeholder="Optionally type hotel name">
+							</div>
+						</div> -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Preferred city area</label>
+								<div class="styled-select-common">
+									<select name="area">
+										<option value="Centre" selected>Lekki</option>
+										<option value="Gar du Nord Station">Surulere</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End row -->
+					<hr>
+					<a href="single_hotel.html" class="btn_1 green">
+						<button class="btn_1 green">
+						  <i class="icon-search"></i>Book Now
+						</button>
+					  </a>
+					<!-- <button class="btn_1 green"><i class="icon-search"></i>Book Now</button> -->
+
+					
+				
+				</div>
+	
+				
+			</div>
+		</div>
+	</section>
+	<!-- End hero -->
+
+	<main>
+	<div class="container margin_60">
+    
+        <div class="main_title">
+            <h2>Our <span>Apartment</span> Gallery</h2>
+            <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+        </div>
+        
+        <div class="row">
+        
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/R1.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class=" icon_set_2_icon-104"></i>Room One<span class="price"></span> -->
+                            <!-- <i class=" icon_set_2_icon-104"></i>Room One<span class="price"><sup>$</sup>39</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Arc Triomphe</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.2s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/R1C.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <!-- <div class="badge_save">Save<strong>30%</strong></div> -->
+                        <div class="short_info">
+                            <!-- <i class=" icon_set_2_icon-104"></i>Room One<span class="price"></span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Notredame</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3 popular"><span>Popular</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/SJDJ5063.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class=" icon_set_2_icon-104"></i>Room One<span class="price"></span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Versailles</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/IMG_E0741.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <!-- <div class="badge_save">Save<strong>30%</strong></div> -->
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-30"></i>Walking tour<span class="price"><sup>$</sup>36</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Pompidue</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.5s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/IMG_E0742.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-28"></i>Skyline tours<span class="price"><sup>$</sup>42</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Tour Eiffel</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/IMG_E0745.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-44"></i>Historic Buildings<span class="price"><sup>$</sup>40</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Pantheon</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.7s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/IMG_E0739.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-3"></i>City sightseeing<span class="price"><sup>$</sup>35</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Open Bus</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.8s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/PFAG5167.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-4"></i>Museums<span class="price"><sup>$</sup>38</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Louvre museum</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+            <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                <div class="tour_container">
+					<!-- <div class="ribbon_3"><span>Top rated</span></div> -->
+                    <div class="img_container">
+                        <a href="single_hotel.html">
+                        <img src="img/onaimages/ROIL2914.JPG" width="800" height="533" class="img-fluid" alt="Image">
+                        <div class="short_info">
+                            <!-- <i class="icon_set_1_icon-14"></i>Eat &amp; drink<span class="price"><sup>$</sup>25</span> -->
+                        </div>
+                        </a>
+                    </div>
+                    <!-- <div class="tour_title">
+                        <h3><strong>Boulangerie</strong> tour</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small>(75)</small>
+                        </div>end rating
+                        <div class="wishlist">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>End wish list
+                    </div> -->
+                </div><!-- End box tour -->
+            </div><!-- End col -->
+            
+        </div><!-- End row -->
+		
+        <p class="text-center nopadding">
+            <a href="grid_gallery_2.html" class="btn_1 medium"><i class="icon-eye-7"></i>View More</a>
+        </p>
+    </div><!-- End container -->
+
+
+    <div class="white_bg">
+			<div class="container margin_60">
+				<div class="main_title">
+					<h2>What <span>We</span> Offer</h2>
+					<p>
+						Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+					</p>
+				</div>
+				<div class="row add_bottom_45">
+					<div class="col-lg-4 other_tours"> 
+						<ul>
+							<li><a href="#"><i class="icon_set_1_icon-86"></i>Free Wifi<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_2_icon-110"></i>Swimming Pool<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-59"></i>Complimentary Breakfast<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-22"></i>Pet Allowed<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-13"></i>Accessibility<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-27"></i>Parking<span class="other_tours_price"></span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 other_tours">
+						<ul>
+							<li><a href="#"><i class="icon_set_2_icon-116"></i>Plasma TV<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_2_icon-110"></i>Swimming Pool<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-59"></i>Complimentary Breakfast<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-22"></i>Pet Allowed<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-13"></i>Accessibility<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-27"></i>Parking<span class="other_tours_price"></span></a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-4 other_tours">
+						<ul>
+							<li><a href="#"><i class="icon_set_2_icon-110"></i>Swimming Pool<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-59"></i>Complimentary Breakfast<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-22"></i>Pet Allowed<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-13"></i>Accessibility<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-27"></i>Parking<span class="other_tours_price"></span></a>
+							</li>
+							<li><a href="#"><i class="icon_set_1_icon-86"></i>Free Wifi<span class="other_tours_price"></span></a>
+						</ul>
+					</div>
+				</div>
+				<!-- End row -->
+
+				<div class="banner colored">
+					<h4>Discover our Top tours <span>from $34</span></h4>
+					<p>
+						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+					</p>
+					<a href="single_tour.html" class="btn_1 white">Read more</a>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-3 col-md-6 text-center">
+						<p>
+							<a href="#"><img src="img/onaimages/FICE2022.JPG" alt="Pic" class="img-fluid rounded"></a>
+						</p>
+						<h4><span>Pool </span>Table</h4>
+						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<p>
+							<a href="#"><img src="img/onaimages/pool.jpg" alt="Pic" class="img-fluid rounded"></a>
+						</p>
+						<h4><span>Swimming </span>Pool</h4>
+						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<p>
+							<a href="#"><img src="img/onaimages/IMG_E0738.JPG" alt="Pic" class="img-fluid rounded"></a>
+						</p>
+						<h4><span>Clothing </span>Armoire</h4>
+						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<p>
+							<a href="#"><img src="img/onaimages/DLGS3582.JPG" alt="Pic" class="img-fluid rounded"></a>
+						</p>
+						<h4><span>Hotel</span> booking</h4>
+						<p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
+					</div>
+				</div>
+				<!-- End row -->
+				
+			</div>
+			<!-- End container -->
+		</div>
+		<!-- End white_bg -->
+
+		<section class="promo_full">
+			<div class="promo_full_wp magnific">
+				<div>
+					<h3>BELONG ANYWHERE</h3>
+					<p>
+						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+					</p>
+					<a href="https://youtu.be/_0gV02_Qb38?si=GitfiGZBP2G4GtgA" class="video"><i class="icon-play-circled2-1"></i></a>
+                    
+					<a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video"><i class="icon-play-circled2-1"></i></a>
+					<!-- <a href="img/onaimages/onavideo.MOV" class="video" download><i class="icon-play-circled2-1"></i></a> -->
+
+				</div>
+			</div>
+		</section>
+		<!-- End section -->
+
+		<div class="container margin_60">
+
+			<div class="main_title">
+				<h2>Some <span>good</span> reasons</h2>
+				<p>
+					Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+				</p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-41"></i>
+						<h3><span>+120</span> Premium tours</h3>
+						<p>
+							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+						</p>
+						<a href="about.html" class="btn_1 outline">Read more</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.4s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-30"></i>
+						<h3><span>+1000</span> Customers</h3>
+						<p>
+							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+						</p>
+						<a href="about.html" class="btn_1 outline">Read more</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-57"></i>
+						<h3><span>H24 </span> Support</h3>
+						<p>
+							Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+						</p>
+						<a href="about.html" class="btn_1 outline">Read more</a>
+					</div>
+				</div>
+
+			</div>
+			<!--End row -->
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/laptop.png" alt="Laptop" class="img-fluid laptop">
+				</div>
+				<div class="col-md-6">
+					<h3><span>Get started</span> with CityTours</h3>
+					<p>
+						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+					</p>
+					<ul class="list_order">
+						<li><span>1</span>Select your preferred tours</li>
+						<li><span>2</span>Purchase tickets and options</li>
+						<li><span>3</span>Pick them directly from your office</li>
+					</ul>
+					<a href="all_tour_list.html" class="btn_1">Start now</a>
+				</div>
+			</div>
+			<!-- End row -->
+        
+    	</div>
+		<!-- End container -->
+    </main>
+	<!-- End main -->
+
+    <footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Need help?</h3>
+                    <a href="tel://+2349014411111" id="phone">0901 441 1111</a>
+                    <a href="mailto:reservation@onabooking.com" id="email_footer">reservation@onabooking.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                         <li><a href="#">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="#">Community blog</a></li>
+                        <li><a href="#">Tour guide</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                         <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Settings</h3>
+                    <div class="styled-select">
+                        <select name="lang" id="lang">
+                            <option value="English" selected>English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select name="currency" id="currency">
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="mailto:reservation@onabooking.com"><i class="icon-mail"></i></a></li>
+                            <li><a href="tel:+2349014411111"><i class="icon-phone"></i></a></li>
+                            <li><a href="https://www.instagram.com/onaapartments?igshid=YTQwZjQ0NmI0OA=="><i class="icon-instagram"></i></a></li>
+                        </ul>
+                        <p>© OnA Booking 2023</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	
+	
+	<!-- Search Menu -->
+	<div class="search-overlay-menu">
+		<span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+		<form role="search" id="searchform" method="get">
+			<input value="" name="q" type="text" placeholder="Search..." />
+			<button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+		</form>
+	</div><!-- End Search Menu -->
+	
+	<!-- Sign In Popup -->
+	<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-header">
+			<h3>Sign In</h3>
+		</div>
+		<form>
+			<div class="sign-in-wrapper">
+				<a href="#0" class="social_bt facebook">Login with Facebook</a>
+				<a href="#0" class="social_bt google">Login with Google</a>
+				<div class="divider"><span>Or</span></div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" name="email" id="email">
+					<i class="icon_mail_alt"></i>
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" id="password" value="">
+					<i class="icon_lock_alt"></i>
+				</div>
+				<div class="clearfix add_bottom_15">
+					<div class="checkboxes float-start">
+						<label class="container_check">Remember me
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+					</div>
+					<div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+				</div>
+				<div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
+				<div class="text-center">
+					Don’t have an account? <a href="javascript:void(0);">Sign up</a>
+				</div>
+				<div id="forgot_pw">
+					<div class="form-group">
+						<label>Please confirm login email below</label>
+						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
+						<i class="icon_mail_alt"></i>
+					</div>
+					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+				</div>
+			</div>
+		</form>
+		<!--form -->
+	</div>
+	<!-- /Sign In Popup -->
+
+	<!-- Common scripts -->
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/common_scripts_min.js"></script>
+	<script src="js/functions.js"></script>
+
+    <!-- Specific scripts -->
+    <script>
+    $(function() {
+      $('input.date-pick').daterangepicker({
+          autoUpdateInput: true,
+          singleDatePicker: true,
+          autoApply: true,
+          minDate:new Date(),
+          showCustomRangeLabel: false,
+          locale: {
+            format: 'MM-DD-YYYY'
+          }
+          }, function(start, end, label) {
+          console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('DD-MM-YYYY') + ' (predefined range: ' + label + ')');
+        });
+    });
+    </script>
+	<script>
+		$('input.time-pick').timepicker({
+			minuteStep: 15,
+			showInpunts: false
+		})
+	</script>
+	
+	<script src="js/jquery.ddslick.js"></script>
+	<script>
+		$("select.ddslick").each(function() {
+			$(this).ddslick({
+				showSelectedHTML: true
+			});
+		});
+	</script>	
+
+     <!-- Cookie bar script -->
+     <script src="js/jquery.cookiebar.js"></script>
+     <script>
+         $(document).ready(function(){
+         'use strict';
+          $.cookieBar({
+             fixed: true
+         });
+         });
+     </script>
+
+    <!-- Pop up script  -->
+	<script type="text/javascript" src="js/pop_up.min.js"></script>
+    <script type="text/javascript" src="js/pop_up_func.js"></script>
+	
+  </body>
+</html>
